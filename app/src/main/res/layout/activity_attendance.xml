@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/splashbg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Attendance">
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:background="@drawable/border"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.286">
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/acme"
+            android:gravity="center"
+            android:text="Choose Date "
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/reportDate"
+            android:layout_width="119dp"
+            android:layout_height="50dp"
+            android:fontFamily="@font/acme"
+            android:gravity="center"
+            android:textColor="@color/white" />
+
+        <ImageButton
+            android:id="@+id/fromcal"
+            android:layout_width="42dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="20sp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/calbtn"
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="304dp"
+        android:layout_height="58dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/acme"
+        android:gravity="center"
+        android:text="Attendance Report"
+        android:textColor="@color/white"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.122" />
+
+    <Button
+        android:id="@+id/Attbtn"
+        android:layout_width="185dp"
+        android:layout_height="62dp"
+        android:backgroundTint="@color/white"
+        android:fontFamily="@font/acme"
+        android:text="Generate Report"
+        android:textAllCaps="false"
+        android:textColor="#004aad"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        app:cornerRadius="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.428" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

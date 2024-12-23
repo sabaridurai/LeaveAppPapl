@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "627212345919",
+    "project_id": "paplapplication",
+    "storage_bucket": "paplapplication.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:627212345919:android:4e1206bbd97afd82224e8a",
+        "android_client_info": {
+          "package_name": "com.example.leaveapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "627212345919-8n4rhovphmdc61ug57uv1pnoef3iiujv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBm6Q8l6Xjb0m3UHM6tYNWw33iJfW_A_xs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "627212345919-8n4rhovphmdc61ug57uv1pnoef3iiujv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

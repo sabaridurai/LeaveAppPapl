@@ -1,0 +1,94 @@
+<resources>
+    <string name="app_name">Leave Application</string>
+    <string name="email">Example@paplcorp.com</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="forgot_password">Forgot Password ?</string>
+    <string name="leave">Leave</string>
+    <string name="request">Request</string>
+    <string name="day_book">Day Book</string>
+    <string name="leave_application_tab_view">Leave Application Tab View</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="leavefragment">LeaveFragment</string>
+    <string name="requestfragment">RequestFragment</string>
+    <string name="daybookfragment">DayBookFragment</string>
+
+    <!-- for navigation bar string.xml-->
+    <string name="nav_open">Open</string>
+    <string name="nav_close">Close</string>
+    <string name="apply_leave">Apply Leave</string>
+    <string name="approve_leave">Approve Leave</string>
+    <string name="leave_statistics">Leave Statistics</string>
+    <string name="add_employee">Add Employee</string>
+    <string name="heading">Leave</string>
+    <string name="todo">TODO</string>
+    <string name="menu">Menu</string>
+    <string name="to">TODO</string>
+    <string name="notificationBtn">notification</string>
+    <string name="addbtn">addbtn</string>
+    <string name="cause_of_leave">Cause of Leave</string>
+    <string name="date">Date</string>
+    <string name="select_from_date">Select from date</string>
+    <string name="select_to_date">Select To date</string>
+    <string name="apply">Apply</string>
+    <string name="cancel">Cancel</string>
+    <string name="forenoon">ForeNoon</string>
+    <string name="afternoon">AfterNoon</string>
+    <string name="job_name">Job Name</string>
+    <string name="delete">Delete</string>
+    <string name="jobname">Job Name</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="submit">Submit</string>
+
+    <string-array name="EmployeeRole">
+        <item>Choose Role</item>
+        <item>Employee</item>
+        <item>Lead</item>
+        <item>Manager</item>
+        <item>Admin</item>
+    </string-array>
+
+
+    <string name="profile">profile</string>
+    <string name="name">Name :</string>
+    <string name="department">Department :</string>
+    <string name="id">ID</string>
+    <string name="designation">Designation :</string>
+    <string name="join_date">Join Date </string>
+    <string name="phno">Ph No. </string>
+    <string name="employee_act">Employee Role </string>
+    <string name="edit">Edit</string>
+    <string name="dot">:</string>
+    <string name="spinner">spinner_for_request</string>
+    <string name="total_users">Total Users</string>
+    <string name="employees">Employees</string>
+    <string name="total_leads">Leads</string>
+    <string name="managers">Managers</string>
+    <string name="admin">Admin</string>
+    <string name="view_employee">View Employee</string>
+    <string name="loginbutton">loginbutton</string>
+    <string name="make_harchy">Set Hierarchy</string>
+    <string name="leadlist">LeadList</string>
+    <string name="selectemployee">selectemployee</string>
+    <string name="lead">Lead :</string>
+    <string name="button">Button</string>
+    <string name="emaill">Email</string>
+    <string name="passwordl">Password</string>
+    <string name="loginl">Login</string>
+    <string name="don_t_have_an_account">Don\'t have an account ?</string>
+    <string name="register">Register</string>
+    <string name="add">Add</string>
+    <string name="create_user">Create User</string>
+    <!-- for type of leave in the apply leave page-->
+
+    <!--for report generation -->
+
+    <string-array name="ReportType">
+        <item>Choose Duration</item>
+        <item>Daily</item>
+        <item>Weekly</item>
+        <item>Monthly</item>
+        <item>Yearly</item>
+    </string-array>
+</resources>

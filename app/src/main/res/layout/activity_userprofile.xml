@@ -1,0 +1,422 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/deleteimg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context=".Userprofile">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="16dp"
+        app:cardCornerRadius="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/profile"
+                android:layout_width="wrap_content"
+                android:layout_height="83dp"
+                android:layout_marginTop="32dp"
+                android:layout_weight="1"
+                android:paddingStart="5sp"
+                android:paddingTop="10sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/avatar"
+                tools:ignore="ContentDescription,RtlSymmetry" />
+
+            <Space
+                android:id="@+id/space"
+                android:layout_width="match_parent"
+                android:layout_height="10sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+                tools:ignore="SmallSp" />
+
+            <LinearLayout
+                android:id="@+id/linearLayout2"
+                android:layout_width="360dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/space">
+
+                <ImageButton
+                    android:id="@+id/editimgbtn"
+                    android:layout_width="5sp"
+                    android:layout_height="50sp"
+                    android:layout_weight="1"
+                    android:adjustViewBounds="true"
+                    android:backgroundTint="#F6F5F5"
+
+                    android:contentDescription="@string/delete"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/baseline_edit_24"
+                    tools:ignore="ImageContrastCheck,DuplicateSpeakableTextCheck" />
+
+                <ImageButton
+                    android:id="@+id/deleteimgbtn"
+                    android:layout_width="5sp"
+                    android:layout_height="50sp"
+                    android:layout_weight="1"
+                    android:adjustViewBounds="true"
+                    android:backgroundTint="#F6F5F5"
+
+                    android:contentDescription="@string/delete"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/baseline_delete"
+                    tools:ignore="ImageContrastCheck" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:baselineAligned="false"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.52"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/profile">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:paddingStart="1sp"
+                    tools:ignore="RtlSymmetry,UselessParent">
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="10sp"
+                        tools:ignore="SmallSp" />
+
+                    <TextView
+                        android:id="@+id/EmailShowonprofile"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="serif"
+
+                        android:gravity="center"
+                        android:paddingStart="5sp"
+                        android:textColor="#000000"
+                        android:textSize="15sp" />
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="10sp"
+                        tools:ignore="SmallSp" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/textView3"
+                            android:layout_width="100sp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="serif"
+                            android:text="PSN"
+                            android:textColor="#000000"
+                            tools:ignore="InefficientWeight" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/dot"
+                            android:textColor="@color/black" />
+
+                        <TextView
+                            android:id="@+id/userid"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="serif"
+                            android:paddingStart="10sp"
+                            android:textColor="#000000"
+                            android:textSize="16sp"
+                            android:textStyle="bold"
+                            tools:ignore="RtlSymmetry" />
+                    </LinearLayout>
+
+                    <!--          name     -->
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="10sp"
+                        tools:ignore="SmallSp" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/textViewname"
+                            android:layout_width="100sp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="serif"
+                            android:text="Name "
+                            android:textColor="#000000"
+                            tools:ignore="HardcodedText,InefficientWeight" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/dot"
+                            android:textColor="@color/black" />
+
+                        <TextView
+                            android:id="@+id/Name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="serif"
+                            android:paddingStart="10sp"
+                            android:textColor="#000000"
+                            android:textSize="16sp"
+                            android:textStyle="bold"
+                            tools:ignore="RtlSymmetry" />
+                    </LinearLayout>
+
+
+                    <!--          Etype    -->
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="10sp"
+                        tools:ignore="SmallSp" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/textViewetype"
+                            android:layout_width="100sp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="serif"
+                                android:text="@string/employee_act"
+                            android:textColor="#000000"
+                            tools:ignore="InefficientWeight,TextSizeCheck" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/dot"
+                            android:textColor="@color/black" />
+
+                        <TextView
+                            android:id="@+id/Etype"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="serif"
+                            android:paddingStart="10sp"
+                            android:textColor="#000000"
+                            android:textSize="16sp"
+                            android:textStyle="bold"
+                            tools:ignore="RtlSymmetry" />
+                    </LinearLayout>
+
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="10sp"
+                        tools:ignore="SmallSp" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/textView4"
+                            android:layout_width="100sp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="serif"
+                            android:text="Department"
+                            android:textColor="#000000"
+                            tools:ignore="InefficientWeight,TextSizeCheck" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/dot"
+                            android:textColor="@color/black" />
+
+                        <TextView
+                            android:id="@+id/dep"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="serif"
+                            android:paddingStart="10sp"
+                            android:paddingTop="5sp"
+                            android:textColor="#020000"
+                            android:textSize="16sp"
+                            android:textStyle="bold"
+                            tools:ignore="RtlSymmetry" />
+                    </LinearLayout>
+
+
+                    <!--          Designation    -->
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="10sp"
+                        tools:ignore="SmallSp" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/textViewdesignation"
+                            android:layout_width="100sp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="serif"
+                            android:text="Designation"
+                            android:textColor="#000000"
+                            tools:ignore="InefficientWeight,TextSizeCheck" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/dot"
+                            android:textColor="@color/black" />
+
+                        <TextView
+                            android:id="@+id/Designation"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="serif"
+                            android:paddingStart="10sp"
+                            android:textColor="#000000"
+                            android:textSize="16sp"
+                            android:textStyle="bold"
+                            tools:ignore="RtlSymmetry" />
+                    </LinearLayout>
+
+
+                    <!--          name     -->
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="10sp"
+                        tools:ignore="SmallSp" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/textViewjoindate"
+                            android:layout_width="100sp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="serif"
+                            android:text="@string/join_date"
+                            android:textColor="#000000"
+                            tools:ignore="InefficientWeight" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/dot"
+                            android:textColor="@color/black" />
+
+                        <TextView
+                            android:id="@+id/Joindate"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="serif"
+                            android:paddingStart="10sp"
+                            android:textColor="#000000"
+                            android:textSize="16sp"
+                            android:textStyle="bold"
+                            tools:ignore="RtlSymmetry" />
+                    </LinearLayout>
+
+
+                    <!--          phoneNumber     -->
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="10sp"
+                        tools:ignore="SmallSp" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/textViewphno"
+                            android:layout_width="100sp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="serif"
+                            android:text="@string/phno"
+                            android:textColor="#000000"
+                            tools:ignore="InefficientWeight" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/dot"
+                            android:textColor="@color/black" />
+
+                        <TextView
+                            android:id="@+id/Phnoid"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="serif"
+                            android:paddingStart="10sp"
+                            android:textColor="#000000"
+                            android:textSize="16sp"
+                            android:textStyle="bold"
+                            tools:ignore="RtlSymmetry" />
+                    </LinearLayout>
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="10sp"
+                        tools:ignore="SmallSp" />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
+                tools:ignore="SmallSp" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>
